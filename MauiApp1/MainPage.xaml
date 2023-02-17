@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="10"
+            Padding="30,0"
+            VerticalOptions="Center">
+            <Frame BorderColor="Black">
+            <Grid Padding="4" RowSpacing="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                <Label Grid.Row="0" x:Name="Title" FontSize="Large" HeightRequest="40" FontAttributes="Bold"></Label>
+                <Label Grid.Row="1" x:Name="SubTitle" FontSize="Small"></Label>
+
+            </Grid>
+            </Frame>
+            <Frame BorderColor="Black" >
+                <Label x:Name="Paragraph1" FontSize="Medium"></Label>
+            </Frame>
+            <Frame BorderColor="Black">
+                <Label x:Name="Paragraph2" FontSize="Medium" ></Label>
+            </Frame>
+            <Frame BorderColor="Black">
+                <Label x:Name="Paragraph3" FontSize="Medium" ></Label>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
