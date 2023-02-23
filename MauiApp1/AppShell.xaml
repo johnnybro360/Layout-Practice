@@ -3,14 +3,42 @@
     x:Class="MauiApp1.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:MauiApp1"
-    Shell.FlyoutBehavior="Disabled">
+    xmlns:local="clr-namespace:MauiApp1">
+    <!--Shell.FlyoutBehavior="Disabled">-->
 
-    <ShellContent
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <Tab Title="About"
+            >
+            <ShellContent
         Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+            <ShellContent
+        Title="2"
+        ContentTemplate="{DataTemplate local:DetailPage}"
+        Route="DetailPage" />
+            <ShellContent
+        Title="3"
         ContentTemplate="{DataTemplate local:MoneyEntry}"
         Route="MoneyEntry" />
-    <!--<ShellContent
+            <ShellContent
+        Title="4"
+        ContentTemplate="{DataTemplate local:Profile}"
+        Route="Profile" />
+        </Tab>
+
+
+
+
+        <!--<ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:Profile}"
+        Route="Profile" />
+        <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MoneyEntry}"
+        Route="MoneyEntry" />-->
+        <!--<ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:DetailPage}"
         Route="DetailPage" />
@@ -18,6 +46,6 @@
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />-->
-
+    </FlyoutItem>
 
 </Shell>

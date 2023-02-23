@@ -6,7 +6,7 @@
     <VerticalStackLayout>
         <Label 
             x:Name="Title" Margin="50" FontSize="Medium" BackgroundColor="AliceBlue" Padding="30" />
-        <Border StrokeThickness="5" Padding="20" Margin="60, 40" >
+        <Border StrokeThickness="5" Padding="20" Margin="30" >
             <Grid >
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>

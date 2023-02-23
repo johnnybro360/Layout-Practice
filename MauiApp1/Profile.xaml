@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Profile"
+             Title="Profile">
+    <!--BackgroundImageSource="dotnet_bot.svg"-->
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="3*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid VerticalOptions="StartAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Image Source="dotnet_bot.svg" />
+
+            <Label Grid.Row="1" Text="Joe Bloggs" HorizontalOptions="Center" />
+
+        </Grid>
+        <ScrollView Grid.Column="1">
+            <Label  Padding="10" FontSize="Body" Text="Joe Bloggs is a valued member of our diverse and creative team, blah, blah, blah, Does anyone even read this copy? I bet I could write anything I like in here and no one will notice. I mean, it’s not like most people are interested in the biography of a low level nobody like Joe here. Or, frankly, even the CEO. I don’t even know his name. Or her. Then again, I guess Joe will probably drop by and read it at some point. Vanity, you know. Hi, Joe! No offence, dude. it’s just that I’m retiring in three months anyway and, let’s face it, you know I’m right that you’re the only person who is going to read this. My farewell party is on the 12th of April. Bring a bottle. Or two." />
+
+        </ScrollView>
+        <Grid Grid.Column="1" Grid.Row="1" Padding="20, 10" ColumnSpacing="30" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button FontSize="Small" Text="Email" Clicked="Button_Clicked" VerticalOptions="Center" />
+            <Button Grid.Column="1" Text="LinkedIn" VerticalOptions="Center" />
+            <Button Grid.Column="2" Text="Facebook" VerticalOptions="Center" />
+        </Grid>
+    </Grid>
+</ContentPage>
