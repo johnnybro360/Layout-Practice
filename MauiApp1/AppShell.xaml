@@ -8,12 +8,16 @@
 
     <ShellContent
         Title="Home"
+        ContentTemplate="{DataTemplate local:MoneyEntry}"
+        Route="MoneyEntry" />
+    <!--<ShellContent
+        Title="Home"
         ContentTemplate="{DataTemplate local:DetailPage}"
         Route="DetailPage" />
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        Route="MainPage" />-->
 
 
 </Shell>

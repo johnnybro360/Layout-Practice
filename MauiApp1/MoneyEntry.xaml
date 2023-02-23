@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MoneyEntry"
+             Title="MoneyEntry">
+    <Grid Margin="20"  Padding="20" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="3*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Row="0" Grid.ColumnSpan="3" Margin="0, 10" BackgroundColor="Black" >
+            <Label FontSize="Medium" TextColor="White" Text="$0" HorizontalOptions="End" VerticalOptions="Center" Margin="0, 0, 20, 0"/>
+            </Border>
+        <Border Grid.Row="1" BackgroundColor="Black">
+            <Button BackgroundColor="Black" TextColor="White" FontSize="Medium" Text="7" HorizontalOptions="Center" VerticalOptions="Center" />
+            </Border>
+        <Border Grid.Row="1" Grid.Column="1" BackgroundColor="Black"  >
+            <Button BackgroundColor="Black" TextColor="White" FontSize="Medium" Text="8" HorizontalOptions="Center" VerticalOptions="Center" />
+            </Border>
+        <Border Grid.Row="1" Grid.Column="2" BackgroundColor="Black" >
+            <Button BackgroundColor="Black" TextColor="White" FontSize="Medium" Text="9" HorizontalOptions="Center" VerticalOptions="Center" />
+
+            </Border>
+        <Border Grid.Row="2" BackgroundColor="Black"  >
+            <Button BackgroundColor="Black" TextColor="White" FontSize="Medium" Text="4" HorizontalOptions="Center" VerticalOptions="Center" />
+            </Border>
+        <Border Grid.Row="2" Grid.Column="1" BackgroundColor="Black" >
+            <Button BackgroundColor="Black" TextColor="White" FontSize="Medium" Text="5" HorizontalOptions="Center" VerticalOptions="Center" />
+            </Border>
+        <Border Grid.Row="2" Grid.Column="2" BackgroundColor="Black" >
+            <Button BackgroundColor="Black" TextColor="White" FontSize="Medium" Text="6" HorizontalOptions="Center" VerticalOptions="Center" />
+            </Border>
+        <Border Grid.Row="3" BackgroundColor="Black"  >
+            <Button BackgroundColor="Black" TextColor="White" FontSize="Medium" Text="1" HorizontalOptions="Center" VerticalOptions="Center" />
+            </Border>
+        <Border Grid.Row="3" Grid.Column="1" BackgroundColor="Black" >
+            <Button BackgroundColor="Black" TextColor="White" FontSize="Medium" Text="2" HorizontalOptions="Center" VerticalOptions="Center" />
+            </Border>
+        <Border Grid.Row="3" Grid.Column="2" BackgroundColor="Black" >
+            <Button BackgroundColor="Black" TextColor="White" FontSize="Medium" Text="3" HorizontalOptions="Center" VerticalOptions="Center" />
+            </Border>
+        <Border Grid.Row="4" BackgroundColor="Black" >
+            <Button BackgroundColor="Black" TextColor="White" FontSize="Medium" Text="0" HorizontalOptions="Center" VerticalOptions="Center" />
+        </Border>
+        <Border Grid.Row="4" Grid.Column="1" BackgroundColor="Black" >
+            <Button BackgroundColor="Black" TextColor="White" FontSize="Medium" Text="." HorizontalOptions="Center" VerticalOptions="Center" />
+        </Border>
+        <Border Grid.Row="4" Grid.Column="2" BackgroundColor="Black" >
+            <Button BackgroundColor="Black" TextColor="White" FontSize="Medium" Text="C" HorizontalOptions="Center" VerticalOptions="Center" />
+        </Border>
+
+    </Grid>
+</ContentPage>
